@@ -1,31 +1,27 @@
-# Template React Dev Container | react 项目模版【vscode的dev container容器版】
+# TestAngular
 
-![Template](./doc/Template.png)
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
-使用VScode在容器中编程的模板 团队统一环境 而性能无太大影响
+## Development server
 
-## 环境
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-- docker
+## Code scaffolding
 
-注意：window下使用基于wsl2的docker引擎模式，否则影响性能体验。
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## 初始工作
+## Build
 
-容器里的git用户名密码需要重新设置
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-- git config user.email
-- git config user.name
+## Running unit tests
 
-## 引擎盖下
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-- 使用Docker 有一个本地“命名卷”的概念，把node-module被移到容器里 提供更好的性能【关键】
-  - 注意：自动以文件夹名称命名该卷，如果文件夹名称相同则所用卷也相同，会互相污染。可以手动指定`devcontainer.json`的mount参数。
-- crlf换行问题
-- 一些好用的插件
+## Running end-to-end tests
 
-## Reference
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-- [Improve container performance](https://code.visualstudio.com/remote/advancedcontainers/improve-performance#_use-a-targeted-named-volume)
-- [Visual Studio Code Remote Development Troubleshooting Tips and Tricks](https://code.visualstudio.com/docs/remote/troubleshooting#_resolving-git-line-ending-issues-in-wsl-resulting-in-many-modified-files)
+## Further help
 
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
